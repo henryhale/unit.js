@@ -1,0 +1,14 @@
+import Navbar from "./components/nav.unit";
+import Footer from "./components/footer.unit";
+
+<div>
+    <Navbar />
+    <main>
+        <h2>About Unit.js</h2>
+        <p>
+            Unit.js is a sweet little wrapper around Alpine.js
+            to enable you build multi-page applications.
+        </p>
+    </main>
+    <Footer />
+</div>

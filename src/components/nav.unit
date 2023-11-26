@@ -1,0 +1,13 @@
+<nav x-data="app">
+    <a>
+        <img :src="logo" :alt="brand" class="logo"/>
+    </a>
+    <h1 x-text="brand"></h1>
+    <ul>
+        <template x-for="x in links" x-key="x.link">
+            <li>
+                <a :href="x.href" x-text="x.name"></a>
+            </li>
+        </template>
+    </ul>
+</nav>

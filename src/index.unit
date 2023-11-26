@@ -1,0 +1,14 @@
+import Navbar from "./components/nav.unit";
+import Footer from "./components/footer.unit";
+
+<div>
+    <Navbar />
+    <main>
+        <div class="card">
+            <button x-data="{count: 0}" @click="count++" type="button">
+                Count: <span x-text="count"></span>
+            </button>
+        </div>
+    </main>
+    <Footer />
+</div>
