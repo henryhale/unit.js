@@ -1,4 +1,4 @@
-import{d as a,m as i,r as l}from"./state-fBv8qDZN.js";function o(){const n={};return n.$47c7602e=()=>`<nav x-data="app">
+import{d as a,m as i,r as l}from"./state-fBv8qDZN.js";function o(){const n={};return n.$6670359b=()=>`<nav x-data="app">
     <a>
         <img :src="logo" :alt="brand" class="logo"/>
     </a>
@@ -10,11 +10,11 @@ import{d as a,m as i,r as l}from"./state-fBv8qDZN.js";function o(){const n={};re
             </li>
         </template>
     </ul>
-</nav>`,n.$69e8360d=()=>`<p class="read-the-docs">
+</nav>`,n.$4693293=()=>`<p class="read-the-docs">
     Built with 💛 by 
     <a href="https://github.com/henryhale">Henry Hale</a> 
 </p>`,{setFn:(e,t)=>{console.log(e,n[e].toString(),t),n[e]=new Function(`return ${t}`)},html:()=>`<div>
-    ${n.$47c7602e()}
+    ${n.$6670359b()}
     <main>
         <h2>About Unit.js</h2>
         <p>
@@ -22,5 +22,5 @@ import{d as a,m as i,r as l}from"./state-fBv8qDZN.js";function o(){const n={};re
             to enable you build multi-page applications.
         </p>
     </main>
-    ${n.$69e8360d()}
+    ${n.$4693293()}
 </div>`}}a(i);l(o,"#app",void 0);
