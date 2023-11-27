@@ -14,6 +14,8 @@ Inspired by [Alpine.js](https://alpinejs.dev) and powered by [Vite](https://vite
 
 Define state and components once, reuse them wherever.
 
+>Note: ⚠️ This project is still under development.
+
 ## Key Features
 
 - [x] **Focus on Simplicity**: Unit.js embraces simplicity as a core principle, making it easy for developers to create and manage UI components effortlessly.
