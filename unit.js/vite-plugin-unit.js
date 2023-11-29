@@ -6,6 +6,12 @@ export default function defineUnitPlugin() {
     let nameToPath = {};
     let pathToCode = {};
     let pathtoFn = {};
+
+    // regexp to match unit files
+    const fileRegex = /\.unit$/;
+
+    // regexp to match single html tag
+    const htmlRegex = /<(.+?) ([/]?|.+?)>/g;
     
     // generate a random id
     const uuid = () => Math.floor(Math.random()*1777777771).toString(16);
@@ -31,9 +37,9 @@ export default function defineUnitPlugin() {
             }
         )
         // replace every html tag matching an import name
-        .replace(/<(.+?) ([/]?|.+?)>/g, (match, tag, attr) => {
+        .replace(htmlRegex, (match, tag, attr) => {
             if (nameToPath[tag]) {
-                return `\${component["$${pathtoFn[nameToPath[tag]]}"]()}`;
+                return `\${component["$${pathtoFn[nameToPath[tag]]}"](${JSON.stringify(attr)})}`;
             }
             return match;
         }).trim();
@@ -48,15 +54,19 @@ export default function defineUnitPlugin() {
          */
         async transform(source, id) {
             // check if it a ".unit" file
-            if (!/\.unit$/.test(id)) return;
+            if (!fileRegex.test(id)) return;
 
             // compile the imported .unit file
             const compiled = compile(source, id);
 
             // tranform file contents of each unit file into a function
             const fns = Object.keys(pathtoFn).map(k => {
-                return `component["$${pathtoFn[k]}"] = () => ${JSON.stringify(pathToCode[k])}`;
+                return `component["$${pathtoFn[k]}"] = (attr = "") => {
+                    return \`${pathToCode[k]}\`
+                        .replace(/<(.+?)>/, m => m.slice(0, -1) + " " + attr + ">");
+                }`;
             }).join(";");
+
 
             // compiled code structure
             const code = `
@@ -64,18 +74,16 @@ export default function defineUnitPlugin() {
                     const component = {};
                     ${fns}
                     return { 
-                        setFn: (fn , data) => {
+                        _setFn: (fn , data) => {
                             console.log(fn, component[fn].toString(), data);
                             component[fn] = new Function(\`return \${data}\`);
                         },
-                        html: () => {
-                            return \`${compiled}\`
-                        }
+                        html: () => \`${compiled}\`
                     };
                 }
             `.trim();
 
-            return { code };
+            return { code, map: null };
         },
 
         /* 
@@ -85,7 +93,7 @@ export default function defineUnitPlugin() {
          */
         async handleHotUpdate(context) {
             // check if it's a unit file
-            if (!/\.unit$/.test(context.file)) return;
+            if (!fileRegex.test(context.file)) return;
 
             // send update to client
             context.server.ws.send({
