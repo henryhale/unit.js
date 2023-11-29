@@ -8,4 +8,4 @@ import App from "../src/about.unit";
 
 defineState(Alpine);
 
-render(App, "#app", import.meta.hot);
+render(App, "#app");
