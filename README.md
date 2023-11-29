@@ -24,6 +24,8 @@ Define state and components once, reuse them wherever.
 
 - [x] **Alpine.js Syntax**: Leverage the expressive syntax of Alpine.js within your components. Enjoy the power of declarative programming without unnecessary complexity.
 
+- [x] **TypeScript Support**: Unit files can easily be identified as modules to TypeScript.
+
 - [ ] **Lightning-fast Development with Vite**: Built on the Vite build tool, Unit.js ensures rapid development and efficient hot module replacement, allowing you to see changes in real-time as you code.
 
 - [ ] **HTML build output & Server Side Rendering support**: Generate a fully-rendered page at build time (_Alpine.js will be injected_).
