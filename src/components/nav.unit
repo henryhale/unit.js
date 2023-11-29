@@ -1,3 +1,5 @@
+import NavItem from "./nav-item.unit";
+
 <nav x-data="app">
     <a>
         <img :src="logo" :alt="brand" class="logo"/>
@@ -5,9 +7,7 @@
     <h1 x-text="brand"></h1>
     <ul>
         <template x-for="x in links" x-key="x.link">
-            <li>
-                <a :href="x.href" x-text="x.name"></a>
-            </li>
+            <NavItem x-data="x" />
         </template>
     </ul>
 </nav>
