@@ -35,7 +35,9 @@ Define state and components once, reuse them wherever.
 1. **Installation**: Install Unit.js using your preferred package manager.
 
    ```bash
-   npx degit github:henryhale/unit.js  
+   npx degit github:henryhale/unit.js my_app
+   cd my_app
+   npm install
    ```
 
 2. **Create Your First Component**: Within your `src` folder, simply create a new file with the `.unit` extension, import it into the `src/index.unit` and you're ready to start building your UI component using Alpine.js syntax.
