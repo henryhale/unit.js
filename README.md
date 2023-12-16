@@ -24,9 +24,7 @@ Define state and components once, reuse them wherever.
 
 - [x] **Alpine.js Syntax**: Leverage the expressive syntax of Alpine.js within your components. Enjoy the power of declarative programming without unnecessary complexity.
 
-- [x] **TypeScript Support**: Unit files can easily be identified as modules to TypeScript.
-
-- [ ] **Lightning-fast Development with Vite**: Built on the Vite build tool, Unit.js ensures rapid development and efficient hot module replacement, allowing you to see changes in real-time as you code.
+- [ ] **Lightning-fast Development with Vite HMR**: Built on the Vite build tool, Unit.js will ensure rapid development and efficient hot module replacement, allowing you to see changes in real-time as you code.
 
 - [ ] **HTML build output & Server Side Rendering support**: Generate a fully-rendered page at build time (_Alpine.js will be injected_).
 
@@ -40,7 +38,7 @@ Define state and components once, reuse them wherever.
    npm install
    ```
 
-2. **Create Your First Component**: Within your `src` folder, simply create a new file with the `.unit` extension, import it into the `src/index.unit` and you're ready to start building your UI component using Alpine.js syntax.
+2. **Create Your First Component**: Within your `src/pages/` folder, simply create a new file with the `.unit` extension, import it into the `src/pages/index.unit` and you're ready to start building your UI component using Alpine.js syntax.
 
    ```html
    <!-- hello.unit -->
@@ -62,12 +60,14 @@ Define state and components once, reuse them wherever.
 
    ```bash
    npm run dev
+   # pnpm dev
    ```
 
-4. **Build for Production**: When you're ready to deploy your application, build for production to optimize and minimize your code.
+4. **Build for Production** - _WIP_: When you're ready to deploy your application, build for production to optimize and minimize your code.
 
    ```bash
    npm run build
+   # pnpm build
    ```
 
 ## Contributing
@@ -77,6 +77,8 @@ Contributions are welcome to make Unit.js even better! Feel free to open issues 
 ## License
 
 Unit.js is released under the [MIT License](LICENSE).
+
+Copyright &copy; 2023 [Henry Hale](https://github.com/henryhale)
 
 ---
 

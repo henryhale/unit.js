@@ -1,5 +1,5 @@
-import Navbar from "./components/nav.unit";
-import Footer from "./components/footer.unit";
+import Navbar from "../components/nav.unit";
+import Footer from "../components/footer.unit";
 
 <div>
     <Navbar />

@@ -1,7 +1,7 @@
 import NavItem from "./nav-item.unit";
 
 <nav x-data="app">
-    <a>
+    <a :href="github">
         <img :src="logo" :alt="brand" class="logo"/>
     </a>
     <h1 x-text="brand"></h1>

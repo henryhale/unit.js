@@ -24,6 +24,7 @@ a {
     font-weight: 500;
     color: #a8a745;
     text-decoration: inherit;
+    cursor: pointer;
 }
 
 a:hover {
