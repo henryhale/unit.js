@@ -41,7 +41,7 @@ Unit.js maintains it's major releases in branches of this repository:
 
 - `v1`: _latest version_
 
-> Note: Branches named `v#` for example; v1, v2, ... are branches containing specific stable versions of Unit.js
+> Note: Branches named `v*` for example; v1, v2, ... are branches containing specific stable versions of Unit.js
 
 ## Preresquites
 
@@ -54,7 +54,7 @@ Basic understanding of HTML, CSS, JavaScript, Alpine.js and Node.js (npm and/or 
    Using `npm`:
 
    ```bash
-   npx degit github:henryhale/unit.js/v1 my_app
+   npx degit github:henryhale/unit.js#v1 my_app
    cd my_app
    npm install
    ```
@@ -62,7 +62,7 @@ Basic understanding of HTML, CSS, JavaScript, Alpine.js and Node.js (npm and/or 
    Using `pnpm`:
 
    ```bash
-   pnpm exec degit github:henryhale/unit.js/v1 my_app
+   pnpm exec degit github:henryhale/unit.js#v1 my_app
    cd my_app
    pnpm install
    ```
