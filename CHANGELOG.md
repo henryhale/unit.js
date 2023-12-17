@@ -1,4 +1,18 @@
-### Changelog
+# Changelog
+
+# 1.0.0 (2023-12-17)
+
+
+### Features
+
+* use conventional commits to produce the next version and release ([c09d391](https://github.com/henryhale/unit.js/commit/c09d391fcc1a37b5a3d60402b138e29735c30c6f))
+
+
+### BREAKING CHANGES
+
+* this commit follows a previous commit that contains breaking changes
+
+##
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
 
