@@ -39,7 +39,7 @@ Unit.js maintains it's major releases in branches of this repository:
 
 - `master`: default branch for next version development containing latest features.
 
-- `v1`: _latest_
+- `v1`: _latest version_
 
 > Note: Branches named `v#` for example; v1, v2, ... are branches containing specific stable versions of Unit.js
 
