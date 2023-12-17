@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base ./",
-    "serve": "vite preview",
+    "build": "vite build",
+    "preview": "vite preview",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,6 +16,14 @@
     "url": "https://github.com/henryhale"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henryhale/unit.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/henryhale/unit.js/issues"
+  },
+  "homepage": "https://github.com/henryhale/unit.js#readme",
   "devDependencies": {
     "auto-changelog": "^2.4.0",
     "release-it": "^17.0.0",

@@ -1,0 +1,43 @@
+import Navbar from "../components/nav.unit";
+import Footer from "../components/footer.unit";
+
+<style>
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.list > div {
+    display: flex;
+    align-items: center;
+    padding: 0.125rem 0;
+    margin-top: 0.25rem;
+}
+
+.list > div span {
+    display: inline-block;
+    flex-grow: 1;
+    text-align: left;
+}
+</style>
+
+<Navbar />
+<main>
+    <div x-data="todo">
+        <h3>What's on your mind?</h3>
+        <div>
+            <input x-model.trim="note" type="text" placeholder="type here...">
+            <button @click="note && list.unshift(note) && (note = '')">+ ADD</button>
+        </div>
+        <div class="list">
+            <template x-for="item in list" x-key="item">
+                <div>
+                    <span x-text="item"></span>
+                    <button @click="list.splice(list.findIndex(i => i === item), 1)">&times;</button>
+                </div>
+            </template>
+        </div>
+    </div>
+</main>
+<Footer />

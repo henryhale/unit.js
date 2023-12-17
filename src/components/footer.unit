@@ -1,4 +1,9 @@
-<p class="read-the-docs">
-    Built with 💛 by 
-    <a href="https://github.com/henryhale">Henry Hale</a> 
-</p>
+<footer>
+    <p>
+        Learn how to get started <a href="https://github.com/henryhale/unit.js#getting-started">here</a>.
+    </p>
+    <p>
+        Built with 💛 by 
+        <a href="https://github.com/henryhale">Henry Hale</a> 
+    </p>
+</footer>

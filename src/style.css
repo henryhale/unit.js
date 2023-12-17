@@ -43,14 +43,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
-nav> :nth-of-type(odd) {
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+}
+
+nav > :nth-of-type(odd) {
     margin: 0 0.5rem;
 }
 
-ul {
+nav > ul {
     flex-grow: 1;
     display: inline-flex;
     justify-content: right;
@@ -59,16 +64,17 @@ ul {
     padding: 1rem 0;
 }
 
-li:nth-of-type(odd) {
+nav > ul > li {
     margin: 0 1.5rem 0 0;
 }
 
 main {
-    padding: 6rem;
+    padding: 6rem 0;
 }
 
 #app {
-    max-width: 600px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
@@ -89,6 +95,7 @@ main {
     padding: 2em;
 }
 
+input,
 button {
     border-radius: 8px;
     border: 1px solid transparent;
@@ -101,6 +108,7 @@ button {
     transition: border-color 0.25s;
 }
 
+input,
 button:hover {
     border-color: #fcf94f;
 }
@@ -123,6 +131,7 @@ button:focus-visible {
         color: #444309;
     }
 
+    input,
     button {
         background-color: #f9f9f9;
     }
