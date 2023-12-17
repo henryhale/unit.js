@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 (2023-12-17)
+
+
+### Bug Fixes
+
+* update getting started guide in readme ([e7137c2](https://github.com/henryhale/unit.js/commit/e7137c20e17569c1d06675d34cb0a186d4e312e7))
+
 ## 1.0.1 (2023-12-17)
 
 # 1.0.0 (2023-12-17)
