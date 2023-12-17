@@ -25,7 +25,6 @@
   },
   "homepage": "https://github.com/henryhale/unit.js#readme",
   "devDependencies": {
-    "auto-changelog": "^2.4.0",
     "release-it": "^17.0.1",
     "vite": "^5.0.10"
   },
