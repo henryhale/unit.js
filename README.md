@@ -51,20 +51,10 @@ Basic understanding of HTML, CSS, JavaScript, Alpine.js and Node.js (npm and/or 
 
 1. **Installation**: Install Unit.js using your preferred package manager. For a different version, say `v2`, change `v1` to `v2` in the following command.
 
-   Using `npm`:
-
    ```bash
    npx degit github:henryhale/unit.js#v1 my_app
    cd my_app
-   npm install
-   ```
-
-   Using `pnpm`:
-
-   ```bash
-   pnpm exec degit github:henryhale/unit.js#v1 my_app
-   cd my_app
-   pnpm install
+   npm install # pnpm install
    ```
 
 2. **Create Your First Component**: Within your `src/pages/` folder, simply create a new file with the `.unit` extension, import it into the `src/pages/index.unit` and you're ready to start building your UI component using [Alpine.js](https://alpinejs.dev/).
@@ -88,15 +78,13 @@ Basic understanding of HTML, CSS, JavaScript, Alpine.js and Node.js (npm and/or 
 3. **Run the Development Server**: Start the development server to see your changes in real-time.
 
    ```bash
-   npm run dev
-   # pnpm dev
+   npm run dev # pnpm dev
    ```
 
 4. **Build for Production**: When you're ready to deploy your application, build for production to optimize and minimize your code.
 
    ```bash
-   npm run build
-   # pnpm build
+   npm run build # pnpm build
    ```
 
 5. **Deployment**: After building your project, production files exist in the `dist` folder at the root of your project.
