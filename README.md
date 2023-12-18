@@ -1,6 +1,6 @@
 <div align=center>
 
-![](./public/favicon.png)
+![](./src/public/favicon.png)
 
 # unit.js
 
@@ -110,6 +110,10 @@ Basic understanding of HTML, CSS, JavaScript, Alpine.js and Node.js (npm and/or 
 - `src/template.html`: used to generate html pages from every .unit file in `src/pages/` folder on build time
 - `src/main.js`: common script for all pages place in the `src/template.html`. For a different script per page, create another script and add a script tag in the corresponding .unit file under the `src/pages/` folder
 - `src/style.css`: Shared CSS styles
+
+## Screenshot
+
+![](./screenshot.png)
 
 ## Contributing
 
