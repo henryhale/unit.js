@@ -29,9 +29,9 @@ Define state and components once, reuse them wherever.
 
 - [x] **Reactive by Default**: Components contain plain HTML code with Alpine.js syntax that is reactive during runtime.
 
->Note:
->Unit.js is powered by [Vite](https://vitejs.dev) and so most features
->can be used directly in your project for example asset handling.
+> Note:
+> Unit.js is powered by [Vite](https://vitejs.dev) and so most features
+> can be used directly in your project for example asset handling.
 
 ## Versions
 
@@ -41,7 +41,7 @@ Unit.js maintains it's major releases in branches of this repository:
 
 - `v1`: _latest_
 
->Note: Branches named `v#` for example; v1, v2, ... are branches containing specific stable versions of Unit.js
+> Note: Branches named `v#` for example; v1, v2, ... are branches containing specific stable versions of Unit.js
 
 ## Preresquites
 
