@@ -8,6 +8,15 @@ focus - simplicity - productivity
 
 </div>
 
+---
+
+>_⚠️ The development of this project has shifted to [create-unit](https://github.com/henryhale/create-unit) repository._
+
+---
+
+<details>
+<summary>Old README file</summary>
+
 ## Overview
 
 Unit.js is a lightweight JavaScript UI framework designed to bring focus, simplicity, and enhanced developer productivity to your projects.
@@ -118,3 +127,5 @@ Copyright &copy; 2023 [Henry Hale](https://github.com/henryhale)
 ---
 
 _Enjoy the focus, simplicity, and increased productivity that Unit.js brings to your UI development!_
+
+</details>
